@@ -32,6 +32,7 @@
         <div class="modal-body">
             <p>Task Title</p>
           <input class="form-control" type="text" name="" id="textInput">
+          <div id="msg"></div>
           <br>
           <p>Due Date</p>
           <input class="form-control" type="date" name="" id="dateInput">
@@ -41,34 +42,13 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Add</button>
+          <button type="submit" id="add" class="btn btn-primary">Add</button>
         </div>
       </div>
     </div>
 </form>
 
-        <div id="tasks">
-            <div>
-                <span class="fw-bold">Task 1</span>
-                <br>
-                <span class="small text-secondary">2022-1-22</span>
-                <p>Hi there</p>
-                <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-sharp fa-solid fa-trash"></i>
-                </span>
-            </div>
-            <div>
-                <span class="fw-bold">Task 2</span>
-                <br>
-                <span class="small text-muted">2022-5-22</span>
-                <p>Another try</p>
-                <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-sharp fa-solid fa-trash"></i>
-                </span>
-            </div>
-        </div>
+        <div id="tasks"></div>
     </div>
 </body>
 <script src="main.js"> </script>
